@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedConnect</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="../favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+  <link rel="manifest" href="../favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="prophylax-test-style.css">
+  <script src="prophylax-test-script.js" defer></script>
+</head>
+
+<body>
+  <div class="layout">
+    <header>
+      <a href="../cases-list.html"><img src="../img/arr-back.png"></a>
+      <h1>Ситуационная задача</h1>
+    </header>
+
+    <section class="progress-container">
+      <div class="progress-text">
+
+        <span id="progress-step">Задача 0 из 0</span>
+
+        <span id="progress-percent">0%</span>
+  
+    </div>
+
+  
+    <div class="progress-bar-bg">
+
+  
+      <div id="progress-fill" class="progress-bar-fill"></div>
+
+      </div>
+    </section>
+
+    <main>
+      <div class="test-area" id="test-area">
+        <img src="../img/cases-img/prophylax.png">
+
+        <ul>
+          <li>Профилактика ● ХНИЗ</li>
+          <li id="quiz-title"></li>
+        </ul>
+
+        <div class="quiz-area">
+          <ul>
+            <li>Описание ситуации</li>
+            <li class="task" id="quiz-description"></li>
+            <li>Вопрос</li>
+            <li class="question" id="quiz-question"></li>
+            <li>Выберите правильный ответ</li>
+          </ul>
+
+          <div id="answers-container" class="answers-list"></div>
+
+          <button type="button" id="check-btn" class="button">Ответить</button>
+        </div>
+      </div>
+
+      <div class="answer-checked" id="answer-checked">
+        <div id="answer-status" class="answer-status">
+        </div>
+
+        <span>Комментарий</span>
+        <span id="comment" class="comment"></span>
+
+        <div id="remember-area">
+        </div>
+
+        <button type="button" id="next-btn" class="button">Следующая задача</button>
+      </div>
+
+      <div id="finish-area" class="finish-area">
+        <div id="finish-text"></div>
+        <button type="button" id="quit-btn" class="button">Завершить тест</button>
+      </div>
+    </main>
+  
+    <footer>
+      <ul>
+        <li>
+          <div class="locked"><img src="../img/locked.png"></div>
+          <a><img src="../img/stats.png"></a>
+        </li>
+        <li>
+          <div class="locked"></div>
+          <a><img src="../img/mail.png"></a>
+        </li>
+        <li>
+          <div class="locked"><img src="../img/locked.png"></div>
+          <a><img src="../img/settings.png"></a>
+        </li>
+        <li>
+          <div class="locked"><img src="../img/locked.png"></div>
+          <a><img src="../img/profile.png"></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
