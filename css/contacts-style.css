@@ -119,6 +119,11 @@ main > .form-link {
   background-color: #00B8F1;
   margin: 10px 0;
   padding: 10px 15px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 900;
+  color: #FFFFFF;
   transition: 0.3s;
   text-align: center;
 }
@@ -130,14 +135,6 @@ main > .form-link:hover {
 
 main > .form-link:active {
   transform: translateY(0.5px);
-}
-
-main > .form-link > a {
-  text-decoration: none;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 900;
-  color: #FFFFFF;
 }
 
 main > .contact-icons {
@@ -281,8 +278,12 @@ footer > ul > li > a > img {
 
   main > h2 {font-size: 22px;}
   main > p {font-size: 16px;}
-  main > .form-link {width: 50%;}
-  main > .form-link > a {font-size: 16px;}
+  
+  main > .form-link {
+    width: 50%;
+    font-size: 16px;
+  }
+  
   main > .contact-icons {gap: 50px;}
 
   main > .contact-icons > li {
