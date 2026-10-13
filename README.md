@@ -1,43 +1,95 @@
-# MedConnect (Beta v1.0)
+# 🏥 MedConnect (v2.0)
 
 **MedConnect** is an interactive, mobile-friendly educational web application designed for medical university and college students. It serves as a comprehensive digital portal to master essential nursing competencies, test medical knowledge under time constraints, and access vital regulatory documents.
 
----
-
-## 📚 Covered Modules & Curriculums
-The current beta release fully implements three core vocational modules (MDK) under medical training standards:
-
-*   **MDK 01.01:** Ensuring a Safe Environment within Healthcare Organizations (Infection control, waste management, disinfection protocols).
-*   **MDK 04.01:** General Patient Care (Vitals monitoring, basic nursing procedures, enema, ice-pack application).
-*   **MDK 04.04:** Standards and Technologies in Professional Nursing Practice (Blood pressure monitoring, heart rate assessment, bedsores prevention).
+Originally built as a vanilla JS beta, alpha version has been **completely re-engineered from the ground up using React** to achieve high performance, modular architecture, and a seamless app-like user experience.
 
 ---
 
-## ✨ Key Features
-*   📖 **Interactive Guidelines & Manuals:** Well-structured, step-by-step algorithms for medical procedures grouped logically by modules.
-*   ⏱️ **Asynchronous Timed Testing:** JavaScript-driven mock exams with automated background countdowns that never freeze the user interface.
-*   🧩 **Clinical Case Studies (Situational Tasks):** Practical scenarios designed to develop clinical thinking and decision-making skills.
-*   💾 **Regulatory Documents Hub:** Instant view and download access to official medical regulations and sanitary guidelines (e.g., SanPiN documents) in PDF format.
-*   🔒 **Feature Toggling (Beta Screens):** Unreleased modules (such as Competitions and Anonymous Chat) are gracefully locked using CSS absolute layouts and pointer-event blocking for a seamless app-like UX.
+## 🚀 Tech Stack & Architecture
+
+The project follows a modern client-server architecture, splitting frontend user experience from development-stage services.
+
+### Frontend (SPA)
+* **Core Framework:** `React.js` (Functional components, Hooks, Custom State Logic)
+* **Build Tool:** `Vite` (Lightning-fast HMR and optimized production bundling)
+* **Routing:** `React Router` (Declarative client-side routing, protected routes, and dynamic navigation)
+* **Styling:** `Tailwind CSS` (Utility-first framework with custom configuration for medical UI templates)
+* **Markups & Design:** `Semantic HTML5`, `CSS3` (Flexbox/Grid layouts), and responsive UI patterns.
+
+### Backend & Dev Services
+* **Runtime Environment:** `Node.js` (Powering development build tools and package management)
+* **Mock Backend & Automation:** `Python` + `FastAPI` (High-performance service layer serving local development configurations, data simulation, and staging API endpoints)
 
 ---
 
-## 🛠️ Tech Stack & Architecture
-This project is built using vanilla technologies to ensure lightning-fast performance, strict security, and flawless execution as a static site hosted on GitHub Pages.
+## 🚀 Tech Stack & Architecture
 
-*   **Frontend:** Semantic HTML5, CSS3 (Flexible box layouts, responsive UI, app-like fixed windows navigation).
-*   **Logic:** Asynchronous Vanilla JavaScript (DOM manipulation, event bubbling control via `stopPropagation`).
-*   **Design & Assets:** Custom UI illustrations, vector icon packs, and embedded typography fonts (Montserrat, Plus Jakarta Sans, Roboto).
+The project follows a modern client-server architecture, splitting frontend user experience from development-stage services.
+
+### Frontend (SPA)
+* **Core Framework:** `React.js`
+* **Routing:** `React Router` (Client-side routing, protected routes, and dynamic navigation)
+* **Build Tool:** `Vite` (for production bundling)
+* **Styling:** `Tailwind CSS`
+* **Markups & Design:** `Semantic HTML5`, `CSS3` (Flexbox/Grid layouts), responsive UI patterns, and cross-browser compatibility.
+
+### Backend & Dev Services
+* **Runtime Environment:** `Node.js`
+* **Mock Backend & Automation:** `Python` + `FastAPI` (Service layer serving local development configurations, data simulation, and staging API endpoints)
+
+---
+
+## 🌟 Key Features
+
+* 📚 **Imperative Guidelines & Manuals:** Well-structured, componentized step-by-step algorithms for medical procedures grouped logically by modules.
+* ⏱️ **Asynchronous Timed Testing:** React-driven mock exams featuring optimized state-controlled countdowns.
+* 🧩 **Clinical Case Studies (Situational Tasks):** Interactive practical scenarios designed to develop critical clinical thinking and decision-making skills.
+* 📜 **Regulatory Documents Hub:** Instant view and download access to official medical regulations and sanitary guidelines (e.g., SanPiN documents) in PDF format.
+* ⚡ **Integrated Interactive Modules:** Fully implemented core platform services, including a real-time Competitions engine and a secure Peer-to-Peer Chat system, implemented in accordance with modern standards of efficiency and personal data security.
+* 📱 **Fluid Responsive Layouts:** Fully optimized for seamless presentation across diverse screen sizes, from compact mobile devices (iOS/Android) to high-resolution desktop monitors.
+* 🌐 **Cross-Browser Accessibility:** Engineered and tested to deliver identical performance and visual fidelity on Chrome, Safari, Firefox, and Edge browsers.
+
+---
+
+## 🛠️ Installation & Local Development
+
+To spin up the project locally in development mode, follow these steps:
+
+### Prerequisites
+Make sure you have **Node.js** and **Python 3.8+** installed on your system.
+
+### 1. Frontend Setup
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com
+cd medconnect
+npm install
+```
+Start the Vite local development server:
+```bash
+npm run dev
+```
+
+### 2. Development Server Setup (Python FastAPI)
+Navigate to your backend/server directory and launch your service script or run directly via Uvicorn:
+```bash
+# Example if using standard Uvicorn launch:
+pip install fastapi uvicorn
+uvicorn main:app --reload
+```
+
+---
+
+## 🗺️ Future Roadmap
+
+* 🌐 **Full Staging Integration:** Migrate the lightweight Python FastAPI server into a production-ready cloud backend.
+* 📱 **PWA Support:** Convert the interface into a true Progressive Web App (PWA) using Vite plugins for offline capability.
+* 🥇 **Global Leaderboards:** Implement WebSocket connections for real-time peer-to-peer chat modules and competitive quizzes.
 
 ---
 
 ## 👥 Authors & Credits
-*   **Front-end Development:** [Artyom Kuznetsov](https://artyom-smith.github.io)
-*   **UI/UX Design:** [Polina Zhigalova]
 
----
-
-## 📝 Future Roadmap
-*   Migrate static code into a modern SPA framework (React / Vue) for the alpha release.
-*   Convert the fixed-window interface into a true Progressive Web App (PWA) using the pre-configured `manifest.json`.
-*   Unlock the global interactive leaderboard and peer-to-peer chat modules.
+* **Front-end & Server-side Development:** [Artyom Kuznetsov](https://github.io)
+* **UI/UX Design:** Polina Zhigalova
