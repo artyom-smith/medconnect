@@ -11,23 +11,6 @@ Originally built as a vanilla JS beta, alpha version has been **completely re-en
 The project follows a modern client-server architecture, splitting frontend user experience from development-stage services.
 
 ### Frontend (SPA)
-* **Core Framework:** `React.js` (Functional components, Hooks, Custom State Logic)
-* **Build Tool:** `Vite` (Lightning-fast HMR and optimized production bundling)
-* **Routing:** `React Router` (Declarative client-side routing, protected routes, and dynamic navigation)
-* **Styling:** `Tailwind CSS` (Utility-first framework with custom configuration for medical UI templates)
-* **Markups & Design:** `Semantic HTML5`, `CSS3` (Flexbox/Grid layouts), and responsive UI patterns.
-
-### Backend & Dev Services
-* **Runtime Environment:** `Node.js` (Powering development build tools and package management)
-* **Mock Backend & Automation:** `Python` + `FastAPI` (High-performance service layer serving local development configurations, data simulation, and staging API endpoints)
-
----
-
-## 🚀 Tech Stack & Architecture
-
-The project follows a modern client-server architecture, splitting frontend user experience from development-stage services.
-
-### Frontend (SPA)
 * **Core Framework:** `React.js`
 * **Routing:** `React Router` (Client-side routing, protected routes, and dynamic navigation)
 * **Build Tool:** `Vite` (for production bundling)
