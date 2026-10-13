@@ -1,4 +1,4 @@
-# 🏥 MedConnect (v2.0)
+# 🏥 MedConnect
 
 **MedConnect** is an interactive, mobile-friendly educational web application designed for medical university and college students. It serves as a comprehensive digital portal to master essential nursing competencies, test medical knowledge under time constraints, and access vital regulatory documents.
 
