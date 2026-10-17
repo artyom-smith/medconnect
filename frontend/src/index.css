@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/Plus-Jakarta-Sans.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto.woff2") format("woff2");
+  font-display: swap;
+}
