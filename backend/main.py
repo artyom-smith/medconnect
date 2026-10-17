@@ -23,7 +23,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -32,6 +32,9 @@ app.add_middleware(
 users_db = read_db()
 users_db = {user["email"]: user for user in users_db}
 
+@app.get("/")
+def home():
+    return {"status": "working", "message": "Hello from Render!"}
 
 @app.post('/login')
 def check_user(credentials: LoginRequest):
