@@ -7,5 +7,7 @@ const rootNode = document.getElementById("root");
 const root = ReactDOM.createRoot(rootNode);
 
 root.render(
-  <MyApp />
+  <BrowserRouter basename="/medconnect">
+    <MyApp />
+  </BrowserRouter>
 )
