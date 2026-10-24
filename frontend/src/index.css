@@ -19,3 +19,40 @@
   src: url("./assets/fonts/Roboto.woff2") format("woff2");
   font-display: swap;
 }
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.recharts-wrapper *:focus:not(:focus-visible) {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.ul-list { list-style-type: circle; }
+.ol-list { list-style-type: decimal; }
+
+.ol-list ul, .ul-list ul {
+  list-style-type: circle;
+}
+
+.ol-list ol, ul-list ol {
+  list-style-type: lower-alpha;
+}
