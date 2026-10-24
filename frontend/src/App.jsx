@@ -7,6 +7,7 @@ import MainLayout from "./MainLayout.jsx";
 import Auth from "./pages/Auth.jsx";
 import Home from "./pages/Home.jsx";
 import Welcome from "./pages/Welcome.jsx";
+import Modules from "./pages/Modules.jsx";
 
 
 export default function MyApp() {
@@ -48,6 +49,7 @@ export default function MyApp() {
       <Route element={<ProtectedRoute isAuth={isAuth}/>}>
         <Route element={<MainLayout />}>
           <Route path="/home" element={<Home />} />
+          <Route path="/modules" element={<Modules />} />
         </Route>
       </Route>
     </Routes>
