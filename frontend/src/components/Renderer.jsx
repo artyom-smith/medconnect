@@ -159,7 +159,7 @@ export default function Renderer({ block }) {
     case 'img':
       return (
         <img
-          src={block.src}
+          src={`${import.meta.env.BASE_URL}${block.src}`}
           alt={block.alt}
           className="w-[90%] md:w-[70%] lg:w-[50%]"
         />
