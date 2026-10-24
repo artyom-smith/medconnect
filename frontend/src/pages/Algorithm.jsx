@@ -22,7 +22,7 @@ export default function Algorithm() {
     setLoading(true);
     setError(false);
 
-    fetch(`/algorithms/${mdkId}/${algoId}.json`)
+    fetch(`${import.meta.env.BASE_URL}algorithms/${mdkId}/${algoId}.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('Algorithm not found');
