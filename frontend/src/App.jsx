@@ -8,6 +8,8 @@ import Auth from "./pages/Auth.jsx";
 import Home from "./pages/Home.jsx";
 import Welcome from "./pages/Welcome.jsx";
 import Modules from "./pages/Modules.jsx";
+import AlgorithmsList from "./pages/AlgorithmsList.jsx";
+import Algorithm from "./pages/Algorithm.jsx";
 
 
 export default function MyApp() {
@@ -50,6 +52,8 @@ export default function MyApp() {
         <Route element={<MainLayout />}>
           <Route path="/home" element={<Home />} />
           <Route path="/modules" element={<Modules />} />
+          <Route path="/modules/:mdkId" element={<AlgorithmsList />} />
+          <Route path="/modules/:mdkId/:algoId" element={<Algorithm />} />
         </Route>
       </Route>
     </Routes>
