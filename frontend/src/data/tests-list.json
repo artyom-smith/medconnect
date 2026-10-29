@@ -1,0 +1,26 @@
+﻿[
+  {
+    "id": "mdk-01-01",
+    "title": "МДК 01.01.",
+    "subtitle": "Обеспечение безопасной окружающей среды в медицинской организации",
+    "tests": [
+      { "id": "detergents", "img": "/img/tests/dezinfectants.png", "title": "Моющие средства", "questions": "15", "duration": "10"}
+    ]
+  },
+  {
+    "id": "mdk-04-01",
+    "title": "МДК 04.01.",
+    "subtitle": "Общий уход за пациентами",
+    "tests": [
+      { "id": "laws", "img": "/img/tests/dezinfectants.png", "title": "Правовые основы ухода", "questions": "15", "duration": "10"}
+    ]
+  },
+  {
+    "id": "mdk-04-04",
+    "title": "МДК 04.04.",
+    "subtitle": "Стандарты и технологии  практической деятельности медицинской сестры",
+    "tests": [
+      { "id": "care", "img": "/img/tests/dezinfectants.png", "title": "Осуществление сестринского ухода", "questions": "15", "duration": "10"}
+    ]
+  }
+]
