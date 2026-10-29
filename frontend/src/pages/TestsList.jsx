@@ -57,7 +57,7 @@ export default function TestsList() {
             >
               <div className="flex justify-center items-center w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-[50%] bg-[#C6E9FD] p-[5px]">
                 <img
-                  src={item.img}
+                  src={`${import.meta.env.BASE_URL}${item.img}`}
                   alt=""
                   className="w-[90%]"
                 />
