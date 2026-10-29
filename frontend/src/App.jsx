@@ -10,6 +10,8 @@ import Welcome from "./pages/Welcome.jsx";
 import Modules from "./pages/Modules.jsx";
 import AlgorithmsList from "./pages/AlgorithmsList.jsx";
 import Algorithm from "./pages/Algorithm.jsx";
+import SelfControl from "./pages/SelfControl.jsx";
+import TestsList from "./pages/TestsList.jsx";
 
 
 export default function MyApp() {
@@ -54,6 +56,8 @@ export default function MyApp() {
           <Route path="/modules" element={<Modules />} />
           <Route path="/modules/:mdkId" element={<AlgorithmsList />} />
           <Route path="/modules/:mdkId/:algoId" element={<Algorithm />} />
+          <Route path="/self-control" element={<SelfControl />} />
+          <Route path="/self-control/:mdkId" element={<TestsList />} />
         </Route>
       </Route>
     </Routes>
