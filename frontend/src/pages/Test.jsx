@@ -19,6 +19,12 @@ export default function Algorithm() {
     return { currentTest: test, correctAnswers: answers };
   }, [mdkId, testId]);
 
+  const [timeLeft, setTimeLeft] = useState(() => {
+    const savedTime = localStorage.getItem('quiz_time_left');
+    return savedTime !== null ? parseInt(savedTime, 10) : 600;
+  });
+
+
   const [testData, setTestData] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -46,6 +52,27 @@ export default function Algorithm() {
         setLoading(false);
       });
   }, [mdkId, testId]);
+
+  useEffect(() => {
+    if (timeLeft <= 0 || isFinished) {
+      if (timeLeft === 0) {
+        setIsFinished(true);
+        localStorage.removeItem('quiz_time_left');
+      }
+      return;
+    }
+
+    const timerId = setInterval(() => {
+      setTimeLeft((prevTime) => {
+        const newTime = prevTime - 1;
+        localStorage.setItem('test_time_left', newTime);
+        return newTime;
+      });
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, [timeLeft, isFinished]);
+
 
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
@@ -166,7 +193,7 @@ export default function Algorithm() {
           />
 
           <span className="font-roboto font-bold text-sm lg:text-base text-[#0D4764]">
-            00:00
+            {formatTime(timeLeft)}
           </span>
         </div>
       </section>
