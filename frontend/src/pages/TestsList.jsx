@@ -83,7 +83,7 @@ export default function TestsList() {
 
               <button
                 type="button"
-                onClick={() => navigate("/")}
+                onClick={() => navigate(`/self-control/${currentMdk.id}/${item.id}`)}
                 className="absolute right-[10px] top-[30%] rounded-[20px] bg-[#00B9F1] px-[10px] py-[5px] font-roboto text-[10px] md:text-sm text-white transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
               >
                 Начать

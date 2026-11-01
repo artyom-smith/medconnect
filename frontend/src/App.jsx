@@ -12,6 +12,7 @@ import AlgorithmsList from "./pages/AlgorithmsList.jsx";
 import Algorithm from "./pages/Algorithm.jsx";
 import SelfControl from "./pages/SelfControl.jsx";
 import TestsList from "./pages/TestsList.jsx";
+import Test from "./pages/Test.jsx";
 
 
 export default function MyApp() {
@@ -58,6 +59,7 @@ export default function MyApp() {
           <Route path="/modules/:mdkId/:algoId" element={<Algorithm />} />
           <Route path="/self-control" element={<SelfControl />} />
           <Route path="/self-control/:mdkId" element={<TestsList />} />
+          <Route path="/self-control/:mdkId/:testId" element={<Test />} />
         </Route>
       </Route>
     </Routes>
