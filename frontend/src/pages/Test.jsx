@@ -38,7 +38,7 @@ export default function Algorithm() {
     setError(null);
     setCurrentQuestionIndex(0);
 
-    fetch(`/tests/${mdkId}/${testId}.json`)
+    fetch(`${import.meta.env.BASE_URL}tests/${mdkId}/${testId}.json`)
       .then((response) => {
         if (!response.ok) throw new Error('Тест не найден');
         return response.json();
