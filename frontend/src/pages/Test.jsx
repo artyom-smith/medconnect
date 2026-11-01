@@ -14,7 +14,7 @@ export default function Algorithm() {
   const { currentTest, correctAnswers } = useMemo(() => {
     const currentMdk = testsList.find(mdk => mdk.id === mdkId);
     const test = currentMdk?.tests?.find(test => test.id === testId) || null;
-    const answers = currentMdk?.correct_answers || {};
+    const answers = test.correct_answers || {};
 
     return { currentTest: test, correctAnswers: answers };
   }, [mdkId, testId]);
