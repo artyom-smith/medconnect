@@ -199,12 +199,15 @@ export default function Algorithm() {
       </section>
 
       <main className="self-center flex flex-col lg:flex-row gap-3 justify-between items-center mt-[15px] w-[90%] h-[75%] lg:h-[70%] lg:w-[80%] py-[20px] lg:pt-[15px] px-[15px] rounded-[15px] bg-[#D8EFFF] overflow-y-auto">
-        <div>
-          <h3>
+        <div className="flex flex-col items-center gap-1 lg:w-[80%]">
+          <h3 className="w-[90%] mb-[15px] font-roboto font-bold text-base lg:text-xl text-center text-[#0D4764]">
             {testData[currentQuestionIndex].text}
           </h3>
           {testData[currentQuestionIndex].answers.map((answer, answerIndex) => (
-            <label key={answerIndex} >
+            <label
+              key={answerIndex}
+              className="flex items-center gap-2 w-[90%] p-[10px_15px] border-[1px] border-[#E4E4E4] has-[:checked]:border-mainbg rounded-[12px] bg-white font-roboto font-[500] text-sm lg:text-base text-[#0D4764] cursor-pointer transition-all duration-200 ease-in-out"
+            >
               <input
                 type="radio"
                 name={`question-${currentQuestionIndex}`}
@@ -212,22 +215,26 @@ export default function Algorithm() {
                 onChange={() => handleSelectAnswer(
                   currentQuestion.id, answer.id
                 )}
+                className="sr-only peer"
               />
+              <div className="shrink-0 w-[15px] h-[15px] rounded-full border-[2px] border-[#B3C1CB] peer-checked:border-[4px] peer-checked:border-mainbg transition-all duration-200 ease-in-out" />
               {answer.text}
             </label>
           ))}
         </div>
 
-        <div>
+        <div className="flex lg:flex-col lg:gap-8 justify-between mt-2 w-[70%] lg:w-[20%] h-[40px]">
           <button
             type="button"
             onClick={() => handleNextQuestion('bck')}
+            className="p-[10px_15px] rounded-[10px] bg-[#B6D5EA] font-roboto font-[500] text-sm lg:text-base text-[#0D4764] transition-all duration-300 hover:-translate-y-1 active:translate-y-0"
           >
             Назад
           </button>
           <button
             type="button"
             onClick={() => handleNextQuestion('fwd')}
+            className="p-[10px_15px] rounded-[10px] bg-[#00B9F2] font-roboto font-[500] text-sm lg:text-base text-white transition-all duration-300 hover:-translate-y-1 active:translate-y-0"
           >
             Далее
           </button>
