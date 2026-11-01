@@ -4,7 +4,7 @@ import arrBack from '../assets/img/arr-back.png';
 import clock from '../assets/img/tests/timer-icon.png';
 
 import Footer from '../components/Footer.jsx';
-import testsList from '../data/disciplines-list.json';
+import testsList from '../data/tests-list.json';
 
 
 export default function Algorithm() {
