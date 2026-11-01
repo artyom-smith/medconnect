@@ -99,21 +99,43 @@ export default function Algorithm() {
     });
 
     return (
-      <main>
-        <span>
-          Поздравляем! Вы прошли тест.
-        </span>
-        <span>
-          Ваш балл: {correctCount} из {testData.length}
-        </span>
+      <>
+        <header className="flex justify-between items-center gap-1 px-[25px] pt-[15px] md:pt-[25px]">
+          <button
+            type="button"
+            onClick={() => navigate(-1)}
+            className="w-[15px] h-[15px]"
+          >
+            <img
+              src={arrBack}
+              alt="Arrow back"
+            />
+          </button>
+          <h2 className="w-[80%] text-center font-roboto font-bold text-base leading-tight text-[#0D4764]">
+            Тест: {currentTest.title}
+          </h2>
+          <div className="w-[15px]" />
+        </header>
 
-        <button
-          type="button"
-          onClick={() => navigate('/self-control')}
-        >
-          Вернуться к модулям
-        </button>
-      </main>
+        <div className="self-center h-0 w-[90%] my-[15px] border border-mainbg" />
+
+        <main className="self-center flex flex-col justify-center items-center gap-2 w-[90%] h-[75%] lg:w-[80%] lg:h-[70%] px-[15px] rounded-[25px] bg-[#D8EFFF]">
+          <span className="text-center font-roboto font-bold text-base lg:text-xl text-[#0D4764]">
+            Поздравляем! Вы прошли тест.
+          </span>
+          <span className="text-center font-roboto text-sm lg:text-base text-[#0D4764]">
+            Ваш балл: {correctCount} из {testData.length}
+          </span>
+
+          <button
+            type="button"
+            onClick={() => navigate('/self-control')}
+            className="mt-[20px] w-[60%] py-[10px] px-[15px] rounded-[10px] bg-mainbg font-roboto text-sm lg:text-base text-white transition-all duration-300 hover:-translate-y-1 active:translate-y-0"
+          >
+            Вернуться к модулям
+          </button>
+        </main>
+      </>
     )
   }
 
