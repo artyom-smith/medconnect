@@ -119,7 +119,7 @@ export default function Algorithm() {
 
         <div className="self-center h-0 w-[90%] my-[15px] border border-mainbg" />
 
-        <main className="self-center flex flex-col justify-center items-center gap-2 w-[90%] h-[75%] lg:w-[80%] lg:h-[70%] px-[15px] rounded-[25px] bg-[#D8EFFF]">
+        <main className="self-center flex flex-col justify-center items-center gap-2 w-[90%] h-[85%] lg:w-[80%] lg:h-[70%] px-[15px] rounded-[25px] bg-[#D8EFFF]">
           <span className="text-center font-roboto font-bold text-base lg:text-xl text-[#0D4764]">
             Поздравляем! Вы прошли тест.
           </span>

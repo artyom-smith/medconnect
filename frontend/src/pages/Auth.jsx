@@ -54,7 +54,9 @@ export default function Auth({ onLoginSuccess }) {
 
   return (
     <>
-      <h1 className="pb-[35px] text-3xl font-montserrat font-bold">Вход</h1>
+      <h1 className="pb-[15%] text-3xl font-montserrat font-bold">
+        Вход
+      </h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-[15px] md:items-center">
 

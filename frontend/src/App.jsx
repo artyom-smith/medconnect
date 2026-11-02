@@ -39,7 +39,7 @@ export default function MyApp() {
 
       <Route path="/auth" element={
         <div className="flex flex-col justify-center h-screen box-border bg-[#00B8F1] pt-[60px] px-[30px] pb-[30px]">
-          <div className="flex flex-col gap-[15%] md:gap-[30%] h-[100%] box-border rounded-[32px] px-[30px] py-[25%] md:pt-8 shadow-[1.5px_5px_15px_rgba(0,58,107,1.5)] bg-white">
+          <div className="flex flex-col gap-[15%] md:gap-[30%] h-[100%] box-border rounded-[32px] px-[30px] py-[15%] md:pt-8 shadow-[1.5px_5px_15px_rgba(0,58,107,1.5)] bg-white">
             <Auth onLoginSuccess={(userData) => {
               setUser(userData);
               setIsAuth(true);

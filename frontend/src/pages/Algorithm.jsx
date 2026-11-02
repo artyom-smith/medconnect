@@ -77,7 +77,7 @@ export default function Algorithm() {
 
       <div className="self-center h-0 w-[90%] my-[15px] border border-mainbg" />
 
-      <main className="flex flex-col justify-start items-center px-[10px] md:px-[25px] pb-[30px] overflow-y-auto">
+      <main className="flex flex-col justify-start items-center mb-[15px] px-[10px] md:px-[25px] pb-[30px] overflow-y-auto">
         {algoData.map((block, index) => (
           <Renderer key={index} block={block} />
         ))}

@@ -21,7 +21,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="absolute bottom-[12%] md:bottom-[8.8%] lg:bottom-[14.2%] left-[8.5%] md:left-[4%] w-[83%] md:w-[92%] h-[40px] bg-[linear-gradient(0deg,#FFFFFF_10%,#FFFFFF00_100%)] pointer-events-none" />
+      <div className="absolute bottom-[105px] md:bottom-[8.8%] lg:bottom-[14.2%] left-[8.5%] md:left-[4%] w-[83%] md:w-[92%] h-[40px] bg-[linear-gradient(0deg,#FFFFFF_10%,#FFFFFF00_100%)] pointer-events-none" />
 
 
       <footer className="relative flex justify-center mt-auto mb-[18px] self-center h-[45px] w-[88%] md:w-[40%] border-2 border-[#72C5F7] rounded-[32px] py-1 bg-white">
