@@ -13,7 +13,7 @@ export default function Welcome({ onStart }) {
       <button
         type="button"
         onClick={onStart}
-        className="w-[60%] md:w-[350px] shadow-[1.5px_5px_30px_rgba(0,58,107,0.25)] rounded-[32px] bg-skyblue py-[15px] text-2xl font-roboto font-medium text-[#F4FFFD] transition-all duration-300 hover:-translate-y-1 active:translate-y-0">
+        className="w-[60%] md:w-[350px] mb-[10%] md:mb-0 shadow-[1.5px_5px_30px_rgba(0,58,107,0.25)] rounded-[32px] bg-skyblue py-[15px] text-2xl font-roboto font-medium text-[#F4FFFD] transition-all duration-300 hover:-translate-y-1 active:translate-y-0">
         Start
       </button>
 
