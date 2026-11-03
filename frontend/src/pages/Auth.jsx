@@ -54,7 +54,7 @@ export default function Auth({ onLoginSuccess }) {
 
   return (
     <>
-      <h1 className="pb-[15%] text-3xl font-montserrat font-bold">
+      <h1 className="pb-[15%] lg:pb-0 text-3xl font-montserrat font-bold">
         Вход
       </h1>
 
